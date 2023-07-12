@@ -13,6 +13,7 @@ body {
 
   /*background: color image repeat position/size*/
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -140,4 +141,16 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 14px;
+}
+
+/*media queries*/
+/*tudo que começa com @ no CSS é uma at-rule*/
+@media (min-width: 700px){/*funciona apenas quando há esta linha no codigo html: <meta name="viewport" content="width=device-width, initial-scale=1.0">*/
+  :root{
+    --bg-url: url(./assets/assets/bg-desktop.jpg);
+  }
+
+  .light{
+    --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+  }
 }
