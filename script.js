@@ -11,7 +11,6 @@ function toggleMode() {
   } else {
     //se tiver sem light mode, manter a img normal
     img.setAttribute("src", "./assets/assets/Avatar.png")
-    p.setAttribute("@caiotherealnigga")
   }
 
   // if(html.classList.contains('light')){
